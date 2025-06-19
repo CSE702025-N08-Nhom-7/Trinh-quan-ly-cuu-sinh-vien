@@ -1,0 +1,18 @@
+
+.slider-container img,
+.slider img,
+img.slider-image {
+    width: 100vw;           /* Chiều rộng bằng chiều rộng màn hình */
+    max-width: 100%;        /* Không vượt quá vùng chứa */
+    height: auto;           /* Tự điều chỉnh chiều cao theo tỷ lệ */
+    object-fit: cover;      /* Cắt ảnh dư, không làm méo ảnh */
+    display: block;
+    margin: 0 auto;         /* Căn giữa nếu cần */
+}
+
+/* Nếu vùng chứa ảnh có chiều cao cố định, giữ tỉ lệ */
+.slider-container {
+    max-height: 500px;      /* Bạn có thể điều chỉnh chiều cao tối đa */
+    overflow: hidden;       /* Ẩn phần ảnh bị tràn */
+    position: relative;
+}
